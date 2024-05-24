@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cake Shop</title>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="IMAGE/logo.jpg">
+        <nav class="nav-bar">
+            <ul>
+                <li><a class="text" id="home-title" href="#home">Home</a></li>
+                <li><a class="text" id="about-title" href="#about">About</a></li>
+                <li><a class="text" id="store-title" href="#store">Store</a></li>
+            </ul>
+        </nav>
+        <div class="holder">
+            <p class="number">&#9742; 0201 234 5678</p>
+            <div class="cart-buttons">
+                <button class="cart" id="cart">0 Items</button>
+                <button class="clear" id="clear">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+    
+    <a id="home"><div class="home"></a>
+        <img src="IMAGE/background.jpg">
+        <h1 class="welcome">Welcome to <span class="name">Mek's</span></h1>
+        <button class="explore"><a href="#store" id="explore">Explore</a></button>
+    </div>
+
+    <a id="about"><div class="about-us"></a>
+        <div class="about-us-container">
+            <h1>About <span class="us">Us</span></h1>
+            <p>Sebuah Toko Roti Online Yang Berbasis Memesan Melalui Website. Kami Menyediakan Beberapa Macam Menu Roti  Tradisonal Dan Modern </p>
+            <button class="about-us-explore"><a href="#store" id="about-us-explore">Explore</a></button>
+        </div>
+        <img src="IMAGE/Logo.jpg">
+    </div>
+
+    <a id="store"><div class="main"></a>
+        <div class="title-container">
+            <h1 class="our-store">Our <span class="store">Store</span></h1>
+        </div>
+        <div class="button-holder">
+            <button class="filter-button" id="all">All</button>
+            <button class="filter-button" id="cake-button">Tradisional</button>
+            <button class="filter-button" id="cupcake-button">Modern</button>
+           
+        </div>
+
+        <div class="search-bar-container">
+            <p class="search-icon">&#x1F50D</p>
+            <input type="text" placeholder="item..." value="" class="search-bar" id="search-bar" onkeyup="textBarSearch()">
+        </div>
+
+        <div class="confec-holder">
+            <div class="sweet-box">
+                <div class="image-holder">
+                    <img src="donut bagus.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">donut</p>
+                    <p class="confec-price">Rp<span class="price">7.000/pcs</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="cupcake-box">
+                <div class="image-holder">
+                    <img src="cupcake.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">CupCake</p>
+                    <p class="confec-price">Rp<span class="price">6.000/pcs</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+                      
+            <div class="cake-box">
+                <div class="image-holder">
+                    <img src="bolu.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Bolu</p>
+                    <p class="confec-price">Rp<span class="price">25.000</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+        
+
+            <div class="doughnut-box">
+                <div class="image-holder">
+                    <img src="pukis.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Pukis</p>
+                    <p class="confec-price">Rp<span class="price">15.000/box</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="sweet-box">
+                <div class="image-holder">
+                    <img src="lapis agar.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Lapis</p>
+                    <p class="confec-price">Rp<span class="price">20.000/loyang</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="cupcake-box">
+                <div class="image-holder">
+                    <img src="donutanek.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Donat</p>
+                    <p class="confec-price">Rp<span class="price">8.000/pcs</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+        
+
+            <div class="doughnut-box">
+                <div class="image-holder">
+                    <img src="lapisss.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name"> Lapis Jelly</p>
+                    <p class="confec-price">Rp<span class="price">15.000/loyang</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="cake-box">
+                <div class="image-holder">
+                    <img src="rotipisang.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Roti Pisang</p>
+                    <p class="confec-price">Rp<span class="price">4.000/pcs</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="doughnut-box">
+                <div class="image-holder">
+                    <img src="kuekecil.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Macaron</p>
+                    <p class="confec-price">Rp<span class="price">20.000/box</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+        
+
+            <div class="sweet-box">
+                <div class="image-holder">
+                    <img src="gedanggoreng.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Pisang Goreng</p>
+                    <p class="confec-price">Rp<span class="price">15.000/box</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="cupcake-box">
+                <div class="image-holder">
+                    <img src="modern9.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Cake</p>
+                    <p class="confec-price">Rp<span class="price">11.000/pcs</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="cake-box">
+                <div class="image-holder">
+              <img src="martabak.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Terang Bulan</p>
+                    <p class="confec-price">Rp<span class="price">25.000/loyang</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
